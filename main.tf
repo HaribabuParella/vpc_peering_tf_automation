@@ -38,13 +38,13 @@ resource "google_compute_subnetwork" "vpc4-custom-subnet1" {
 }
 resource "google_compute_subnetwork" "vpc4-custom-subnet2" {
   name          = "vpc4-subnetwork2"
-  ip_cidr_range = "10.5.0.0/16"
+  ip_cidr_range = "10.6.0.0/16"
   region        = "us-east4"
   network       = google_compute_network.vpc4-custom.name
 }
 resource "google_compute_subnetwork" "vpc4-custom-subnet3" {
   name          = "vpc4-subnetwork3"
-  ip_cidr_range = "10.5.0.0/16"
+  ip_cidr_range = "10.7.0.0/16"
   region        = "us-east5"
   network       = google_compute_network.vpc4-custom.name
 }
